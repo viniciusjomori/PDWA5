@@ -8,7 +8,7 @@
 <body>
     <h1>Create</h1>
 
-    <div>
+    <div class="message">
         @if($errors->any())
         <ul>
             @foreach($errors->all() as $error)
@@ -63,6 +63,10 @@
 
     body {
         width: 100%
+    }
+
+    .message {
+        font-style: italic
     }
     
     form {
